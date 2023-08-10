@@ -1,0 +1,30 @@
+
+player1= input('player 1 Name:')
+player2 = input('player 2 Name:')
+from getpass import getpass as input
+select1 = input ("""                 Scissor
+                  Paper
+                  Rock
+                  Your choice player1 :""")
+select2 = input("""                  Scissor
+                  Paper
+                  Rock
+                  Your choice player 2:""")
+if select1=="Scissor"and select2=="Rock":
+  print("player2 won!😍")
+elif select1=="Rock" and select2 == "Scissor":
+  print("player 1 won!😉")
+elif select1 == "Scissor" and select2== "Scissor" :
+  print("It is tie!")
+elif select1=="Rock" and select2== "Rock":
+  print ("It is tie!")
+elif select1 == "Paper" and select2 == "Scissor":
+  print("player2 won!😍")
+elif select1 == "Scissor"and select2 == "Paper":
+  print("player1 won!😉")
+elif select1== "Paper" and select2== "Paper":
+  print("It is tie!")
+elif select1=="Rock" and select2== "Paper":
+  print("player2 won!😍")
+elif select1=="Paper" and select2=="Rock":
+  print("player1 won!😉")
