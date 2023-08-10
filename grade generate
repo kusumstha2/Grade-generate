@@ -1,0 +1,23 @@
+test = input("Test Name:")
+maximum_score =int(input("Maximum score:")) 
+obtained_point = int(input("your score:"))
+percent = round((obtained_point/maximum_score)*100,2)
+
+if percent >=90 and percent <=100:
+  print("\033[32m","""YOU GOT A+
+  percentage:""",percent,"%")
+elif percent >=80 and percent<90:
+  print("\033[32m","""YOU GOT A
+  percentage:""",percent,"%")
+elif percent>=70 and percent<80:
+  print("\033[32m","""YOU GOT B
+  PERCENTAGE:""",percent,"%")
+elif percent>=60 and percent < 70:
+  print("\033[32m","""YOU GOT C 
+  percentage:""",percent,"%")
+elif percent>=50 and percent < 60:
+  print("\033[32m","""YOU GOT D
+  percentage:""",percent,"%")
+elif percent < 50:
+   print("\033[31m","""you GOT U
+percentage:""",percent,"%")
