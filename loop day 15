@@ -1,0 +1,16 @@
+exit = "no"
+while exit == "no":
+    animal = input("what animal do you want:")
+    if animal == "cat":
+        print("meow")
+        exit = input("exit:")
+    elif animal == "dog":
+        print("woof woof")
+        exit = input("exit:")
+    elif animal == "tiger":
+        print("rore rore")
+        exit = input("exit:")
+    else:
+        print("this animal name is not recorded")
+        exit = input("exit:")
+  
