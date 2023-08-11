@@ -1,0 +1,17 @@
+print("Fill in the blank lyrics!")
+print("Type in the blank lyrics and see if you are as cool as me.")
+count=0
+while True:
+
+  guess=input("Like an __ in the forest.")
+  if guess == "Echo" or guess == "echo":
+    
+    print("You are right.")
+    print("Like an",guess,"in the forest. ")
+  else:
+    print("Try again!")
+    count+=1
+  if guess=="echo" or guess =="Echo":
+    break
+print("You got the correct lyrics in", count,"attempt.")
+    
