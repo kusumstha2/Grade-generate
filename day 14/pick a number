@@ -1,0 +1,19 @@
+pick= 250
+count=0
+while True:
+  number = int(input("Enter a number between 0 and 1,000,000:"))
+  if number == pick:
+   print("you won!😇")
+   break
+  elif number > pick:
+   print("Too high")
+   count +=1
+  elif number < pick:
+   print ("Too low.")
+   count +=1
+  else:
+    continue
+  print("Number of attempt:",count,"times")  
+  print("great game!")
+   
+    
