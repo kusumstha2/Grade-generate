@@ -1,0 +1,5 @@
+start=int(input("start at:"))
+end= int(input("end before:"))
+Increment = int(input("Increment between values:"))
+for i in range(start,end,Increment):
+ print(i)
