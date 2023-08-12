@@ -3,7 +3,8 @@ multiple= input("Name your multiples:")
 count=0
 for x in range(1,11):
  answer = x* multiple
- ans= int(input(x,"*",multiple))
+ print(x,"*",multiple)
+ ans= int(input("="))
  if ans == answer:
    print("you got the right answer.")
  else:
