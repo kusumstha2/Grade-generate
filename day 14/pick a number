@@ -2,6 +2,9 @@ pick= 250
 count=0
 while True:
   number = int(input("Enter a number between 0 and 1,000,000:"))
+  if number <0:
+   print("error")
+   exit()
   if number == pick:
    print("you won!😇")
    break
