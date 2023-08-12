@@ -1,0 +1,5 @@
+principle = 1000
+r=0.05
+for x in range(10):
+  principle+= (principle*r)
+  print (" Interest in",x+1,"th year is",round(principle,2))
