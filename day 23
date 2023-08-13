@@ -1,0 +1,11 @@
+def username():
+  while True:
+    username =input("what is your name?:")
+    password = input("what is yoir password?:")
+    if username=="Kusum" and password == "kusumstha12":
+       print("Welcome to Replit!")
+       break
+    else:
+      print("didn't recognize.try again!")
+      continue
+username()
