@@ -1,0 +1,20 @@
+import random
+def rolldice(number1):
+  while True:
+    rollk= random.randint(1,number1)
+    return rollk
+    
+def rolld():
+  while True:
+      six=random.randint(6)
+      eig=random.randint(8)
+      multi=six*eig
+      return multi
+print("Character Stats Generator")
+character="yes"
+while character=="yes":
+  name=input("name of your character:")
+  health=str(rolld())
+  print("The health is",health,"hp")
+  
+character=input("\nWant to create another character?:")
