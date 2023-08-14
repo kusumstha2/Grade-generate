@@ -1,0 +1,18 @@
+print("Infinity Dice")
+import random
+def rolldice(number1):
+  while True:
+    roll= random.randint(1,number1)
+    print("you rolled:",roll)
+    again=input("Roll again:(yes/no)")
+    if again == "yes":
+      continue
+    else:
+      break
+sides =int(input("how many sides?:"))   
+rolldice(sides)
+
+
+
+
+   
