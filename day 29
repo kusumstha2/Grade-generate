@@ -1,0 +1,24 @@
+print('\033[36m',"super routine")
+print()
+def text_color(c,w):
+  if c=="red":
+   print ("\033[31m",w, sep="",end="")
+  elif c=="yellow":
+    print("\033[33m",w,sep="",end="")
+  elif c=="purple":
+    print("\033[35m",w, sep="",end="") 
+  elif c=="green":
+   print("\033[32m",w,sep="",end="") 
+  else:
+   print("\033[0m",w,sep="",end="") 
+
+print("super Subroutine")
+print("With my",end="")
+print("red","new program")
+print("a","I can just call red("and")")
+text_color("purple","and")
+text_color("green","""that word will apperance in the color I set it to""")
+print()
+text_color("yellow","weired gaps")
+print()
+text_color("yellow","epic.")
