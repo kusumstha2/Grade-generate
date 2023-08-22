@@ -1,0 +1,49 @@
+def app(color):
+  if color == "red":
+    return("\033[31m")
+  elif color == "blue":
+    return("\033[34m")
+  elif color == "yellow":
+    return("\033[33m")
+  elif color == "green":
+    return("\033[32m")
+  elif color == "pink":
+    return("\033[95m")
+  else:
+    return("\033[0m")
+
+title = f"{app('red')}={app('a')}={app('blue')}={app('yellow')} Music App {app('blue')}={app('a')}={app('red')}="
+print(f"               {title:^35}")
+
+print(f"🔥▶\t{app('a')} Radio Gaga")
+print(f"\t{app('yellow')}Queen")
+print()
+
+print(f"{app('a')} PREV")
+print(f"\t{app('green')} NEXT")
+print(f"\t\t{app('pink')} PAUSE")
+print()
+print()
+prev="PREV"
+next="NEXT"
+pause="PAUSE"
+print(f"{app('a')}{prev:<35}")
+print(f"{app('green')}{next:^15} ")
+print(f"{app('pink')}{pause:>15}")
+
+inter="WELCOME TO"
+book="--   ARMBOOK   --"
+print(f" \n\n{inter:^35}")
+print(f"{app('blue')}{book:^35}")
+texto="Definitely not a rip off of"
+textt="a certain other social"
+textth="networking site."
+red="Honest."
+logo="Username:"
+logt="Password:"
+print(f"\n{app('yellow')}{texto:>35}")
+print(f"{app('yellow')}{textt:>35}")
+print(f"{app('yellow')}{textth:>35}")
+print(f"\n{app('red')}{red:^35}")
+print(f"\n{app('a')}{logo:^35}")
+print(f"{app('a')}{logt:^35}")
